@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<HBox alignment="CENTER" prefHeight="472.0" prefWidth="750.0" spacing="1.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atomredtask.atomredtask.StartController">
+    <padding>
+        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+    </padding>
+
+    <Pane prefWidth="350.0">
+        <padding>
+            <Insets bottom="1.0" left="50.0" right="1.0" top="1.0" />
+        </padding>
+
+        <Rectangle fx:id="rectangle" width="90" height="45" fill="darkblue" arcHeight="10" arcWidth="10"/>
+
+    </Pane>
+
+    <Rectangle width="3" height="400" fill="black" arcWidth="25" arcHeight="25"/>
+
+    <VBox prefWidth="200.0" alignment="TOP_CENTER" spacing="5.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+
+        <Label fx:id="position"/>
+
+        <Label fx:id="setPosition"/>
+
+        <TextField fx:id="positionX"/>
+        <TextField fx:id="positionY"/>
+        <Button text="Изменить позицию" fx:id="setPositionButton" onAction="#setPositionAction"/>
+
+    </VBox>
+
+</HBox>
